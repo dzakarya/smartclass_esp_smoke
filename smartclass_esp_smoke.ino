@@ -108,7 +108,6 @@ void loop() {
     lastMsg = now;
     ++value;
     snprintf (msg, MSG_BUFFER_SIZE, "%s", str_smoke);
-    Serial.print("Publish message: ");
     Serial.println(msg);
     client.publish(topic, msg);
   }
